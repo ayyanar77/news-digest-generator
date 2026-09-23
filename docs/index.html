@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Daily News Digest</title>
+<style>
+  :root {
+    --bg: #f2f4f8;
+    --card-bg: #ffffff;
+    --text: #1a1d29;
+    --muted: #6b7280;
+    --accent: #6d5ef8;
+    --accent-2: #ff6584;
+    --border: #e6e8f0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: white;
+    padding: 56px 24px 64px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0 0 8px;
+    font-size: 2.4rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p {
+    margin: 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: -32px auto 0;
+    padding: 0 20px 40px;
+  }
+
+  .category {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 30px rgba(20, 20, 50, 0.06);
+  }
+
+  .category-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .category-header h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+  }
+
+  .category-icon { font-size: 1.5rem; }
+
+  .count {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: var(--muted);
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(20, 20, 50, 0.08);
+  }
+
+  .card-image {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eceefc;
+  }
+
+  .card-image--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  .card-body {
+    padding: 14px 16px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .card-body h3 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .card-body h3 a:hover { color: var(--accent); }
+
+  .desc {
+    margin: 0 0 10px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .meta {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .empty {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 24px;
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Daily News Digest</h1>
+  <p>Generated on Wednesday, September 23, 2026 at 11:41 PM</p>
+</div>
+
+<div class="container">
+
+    <section class="category">
+      <div class="category-header">
+        <span class="category-icon">💼</span>
+        <h2>business</h2>
+        <span class="count">10 stories</span>
+      </div>
+      <div class="card-grid">
+        
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://s.yimg.com/lo/mysterio/api/81a9c9ae907c8a0ac2dae97a319e158d40b777c7577e398992090233f64723eb/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-09%2F37f22e80-6f8b-4044-abe4-f5cd6fdce5b9')"></div>
+        <div class="card-body">
+          <h3><a href="https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-22-nasdaq-dow-sp-500-080625961.html" target="_blank" rel="noopener noreferrer">Stock market today: Dow slips, Nasdaq drifts higher as oil falls, AI trade powers market - Yahoo Finance</a></h3>
+          <p class="desc">US stocks steadied on Tuesday after confidence in artificial intelligence and falling oil prices spurred a rally on Wall Street.</p>
+          <div class="meta">
+            <span class="source">Yahoo Entertainment</span>
+            <span class="dot">•</span><span class="time">Sep 23, 12:10 AM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://static.foxnews.com/foxnews.com/content/uploads/2026/09/mamdani_doordash.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.foxnews.com/politics/mamdani-blasts-doordash-ceo-greedy-algorithm-ny-slaps-company-131-million-fine" target="_blank" rel="noopener noreferrer">Mamdani blasts DoorDash CEO&#039;s &#039;greedy algorithm,&#039; NY slaps company with $131 million fine - Fox News</a></h3>
+          <p class="desc">Zohran Mamdani announced a historic $131.5 million DoorDash settlement over alleged systematic underpayment of food delivery workers in New York City.</p>
+          <div class="meta">
+            <span class="source">Fox News</span>
+            <span class="dot">•</span><span class="time">Sep 22, 11:28 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://www.usatoday.com/gcdn/authoring/authoring-images/2026/09/01/USAT/91564489007-20260831-160108.jpg?crop=2252,1267,x0,y1367&amp;width=2252&amp;height=1267&amp;format=pjpg&amp;auto=webp')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.usatoday.com/story/cars/shopping/evs/2026/09/22/ev-sales-year-after-trump-ended-tax-credits/91887066007/" target="_blank" rel="noopener noreferrer">Where the US EV market stands a year after Trump ended tax credits - USA Today</a></h3>
+          <p class="desc">President Donald Trump and Republicans in killed U.S. EV credits one year ago. Here&#039;s a look at what&#039;s happened in the industry since then.</p>
+          <div class="meta">
+            <span class="source">USA Today</span>
+            <span class="dot">•</span><span class="time">Sep 22, 11:11 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK269_ANTHROPIC_2_D.webp?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity" target="_blank" rel="noopener noreferrer">Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity - The Verge</a></h3>
+          <p class="desc">Anthropic is launching Claude Opus 5.5 with improvements to behaviors that contribute to rogue AI hacks.</p>
+          <div class="meta">
+            <span class="source">The Verge</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:00 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://nypost.com/wp-content/uploads/sites/2/2026/09/compp-1.jpg?quality=75&amp;strip=all&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://nypost.com/2026/09/22/us-news/san-diego-airport-sees-long-wait-times-crowds-amid-technical-issue/" target="_blank" rel="noopener noreferrer">Chaos at major California airport as passengers stuck in miserable lines due to mass outage - New York Post</a></h3>
+          <p class="desc">Passengers at San Diego International Airport faced long lines and crowded terminals Tuesday morning as a technical issue slowed the ticketing process.</p>
+          <div class="meta">
+            <span class="source">New York Post</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:50 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://cdn.sanity.io/images/s3y3vcno/production/095aad704387ebe986911f22ce9c5695137a996f-2280x1284.png?auto=format&amp;fit=crop&amp;crop=focalpoint&amp;w=1920&amp;h=1080&amp;q=75')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.coindesk.com/markets/2026/09/22/live-updates-oil-falls-as-iran-signals-possible-hormuz-reopening-bitcoin-holds-near-usd86-000" target="_blank" rel="noopener noreferrer">Live updates: Bitcoin trades near $86,000 as U.S. stocks post small gains - CoinDesk</a></h3>
+          <p class="desc">WTI crude oil dropped to $90 as reports suggested Iran could reopen the Strait of Hormuz within seven days.</p>
+          <div class="meta">
+            <span class="source">CoinDesk</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:43 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://i.insider.com/6ab124506794a2984cfcb078?width=1200&amp;format=jpeg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.businessinsider.com/oracle-cloud-layoffs-america-roles-hit-hardest-leaked-doc-2026-9#article" target="_blank" rel="noopener noreferrer">Revealed: Some of the Oracle Cloud Roles Hit Hardest in Layoffs - Business Insider</a></h3>
+          <p class="desc">Business Insider obtained a previously unreported document showing the scale and scope of the cuts at Oracle&#039;s cloud infrastructure division.</p>
+          <div class="meta">
+            <span class="source">Business Insider</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:41 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/if02ZX1k8g_A/v1/1200x816.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.bloomberg.com/news/articles/2026-09-22/saudi-arabia-running-tests-to-resume-east-west-oil-pipeline" target="_blank" rel="noopener noreferrer">Saudi Arabia Running Tests to Resume East-West Oil Pipeline - Bloomberg.com</a></h3>
+          <p class="desc">Saudi Arabia is in the early stages of starting up a key oil pipeline that has enabled Riyadh to bypass the Strait of Hormuz after the conduit was halted earlier this month, people familiar with the matter said.</p>
+          <div class="meta">
+            <span class="source">Bloomberg</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:16 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://deadline.com/wp-content/uploads/2026/09/ari-emanuel-donald-trump-nikki-finke.jpg?w=1024')"></div>
+        <div class="card-body">
+          <h3><a href="http://deadline.com/2026/09/ari-emanuel-interview-nikki-finke-memoir-1237109218/" target="_blank" rel="noopener noreferrer">Ari Emanuel On His New Memoir, Nikki Finke, Talking To Trump, AI’s Upside &amp; The Hollywood Exec He Hates The Most - Deadline</a></h3>
+          <p class="desc">WME co-founder Ari Emanuel&#039;s memoir Roll the Calls is out --  it is in part confession and in part altercation, with a lot of big Hollywood names.</p>
+          <div class="meta">
+            <span class="source">Deadline</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:04 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://news-api.bloomberglaw.com/v1/resize-image?url=https%3A%2F%2Fbloomberg-bna-brightspot.s3.us-east-1.amazonaws.com%2F47%2F1d%2Fe1f41a894a849202ffc1ee0b7f76%2Ftruth-social-trump-message.jpg&amp;width=1200&amp;height=600&amp;fit=cover&amp;crop=8666x3328%2B0%2B1189')"></div>
+        <div class="card-body">
+          <h3><a href="https://news.bloomberglaw.com/litigation/san-francisco-sues-trumps-truth-social-over-paid-subscriptions" target="_blank" rel="noopener noreferrer">San Francisco Sues Trump’s Truth Social Over Paid Subscriptions - Bloomberg Law News</a></h3>
+          <p class="desc">San Francisco’s city attorney is urging a state court to block Trump’s social media platform Truth Social from offering customers who pay $100,000 per month priority access to the president’s and other high-level officials’ posts before they’re available to o…</p>
+          <div class="meta">
+            <span class="source">Bloomberglaw.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 07:26 PM</span>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-header">
+        <span class="category-icon">💻</span>
+        <h2>technology</h2>
+        <span class="count">10 stories</span>
+      </div>
+      <div class="card-grid">
+        
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://images.pushsquare.com/df8d61e3a15e3/large.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.pushsquare.com/news/2026/09/ps-plus-discount-for-one-of-ps5s-best-new-indie-games" target="_blank" rel="noopener noreferrer">PS Plus Discount for One of PS5&#039;s Best New Indie Games - Push Square</a></h3>
+          <p class="desc">Well Dweller opens to 90+ critic reviews</p>
+          <div class="meta">
+            <span class="source">Push Square</span>
+            <span class="dot">•</span><span class="time">Sep 22, 11:43 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://simscommunity.info/wp-content/uploads/2025/01/ts4newupdateFE2025.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://simscommunity.info/2026/09/22/the-sims-4-update-sep-22-26-release/" target="_blank" rel="noopener noreferrer">The Sims 4 Update: Official Patch Notes (Sep 22nd, 2026) - Sims Community</a></h3>
+          <p class="desc">The Sims Team has just released a new The Sims 4 Update across PC, Mac, Xbox and Playstation supported consoles. The update includes over 95 bug fixes for the</p>
+          <div class="meta">
+            <span class="source">Simscommunity.info</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:29 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image card-image--placeholder">💻</div>
+        <div class="card-body">
+          <h3><a href="https://www.wsj.com/real-estate/luxury-homes/thierry-henry-new-york-penthouse-1aefd42a" target="_blank" rel="noopener noreferrer">Exclusive | French Soccer Legend Thierry Henry Lists New York Penthouse for $25 Million - WSJ</a></h3>
+          
+          <div class="meta">
+            <span class="source">The Wall Street Journal</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:26 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iL4E_RQR6ZJc/v2/1200x800.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.bloomberg.com/news/articles/2026-09-22/apple-is-developing-new-fitness-tracker-aimed-at-rivaling-whoop" target="_blank" rel="noopener noreferrer">Apple Is Developing New Fitness Tracker Aimed at Rivaling Whoop - bloomberg.com</a></h3>
+          <p class="desc">Apple Inc. is developing a screenless health and fitness tracker similar to Whoop Inc.’s wrist-worn device, part of an effort to rethink its smartwatch lineup and add new wearable technologies.</p>
+          <div class="meta">
+            <span class="source">Bloomberg</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:51 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://images.macrumors.com/t/Y5LosWiiqev53GeuCdn3HHvaHJw=/2500x/article-new/2026/02/iOS-26-Home-Feature.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.macrumors.com/2026/09/22/apple-working-on-an-all-new-operating-system/" target="_blank" rel="noopener noreferrer">Apple Will Soon Announce an All-New Operating System - MacRumors</a></h3>
+          <p class="desc">Apple is developing an all-new operating system that is essentially a mix of tvOS, watchOS, and iOS, according to Bloomberg&#039;s Mark Gurman.   In...</p>
+          <div class="meta">
+            <span class="source">MacRumors</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:49 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/CMLYVKUMPMQUUIQUBGJJOJUPLE_size-normalized.jpg&amp;w=1440')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.washingtonpost.com/entertainment/video-games/2026/09/22/halo-move-under-call-duty-publisher-xbox-announces-layoffs/" target="_blank" rel="noopener noreferrer">‘Halo’ to move under Call of Duty publisher as Xbox announces layoffs - washingtonpost.com</a></h3>
+          <p class="desc">The cuts affect Halo Studios, other first-party developers, and management and central functions within Xbox, according to an announcement posted this morning by Matt Booty, Xbox’s chief content officer. The company is now about 75 percent finished with a res…</p>
+          <div class="meta">
+            <span class="source">The Washington Post</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:40 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://cdn.videocardz.com/1/2026/09/CYBERPOWER-PC-FOUNDERS-EDITION-RTX-50.webp')"></div>
+        <div class="card-body">
+          <h3><a href="https://videocardz.com/newz/cyberpowerpc-now-sells-prebuilt-pcs-with-nvidia-rtx-50-founders-edition-gpus-1000-rtx-5080-systems-sell-in-one-day" target="_blank" rel="noopener noreferrer">CyberPowerPC now sells prebuilt PCs with NVIDIA RTX 50 Founders Edition GPUs, 1,000 RTX 5080 systems sell in one day - VideoCardz.com</a></h3>
+          <p class="desc">CyberPowerPC is using NVIDIA&#039;s own RTX 50 Founders Edition cards in new Walmart systems. The RTX 5080 configuration with Ryzen 7 9800X3D costs $2,299.</p>
+          <div class="meta">
+            <span class="source">Videocardz.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:34 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://assetsio.gnwcdn.com/rayman-music.jpg?width=1200&amp;height=630&amp;fit=crop&amp;enable=upscale&amp;auto=webp')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.eurogamer.net/rayman-legends-iconic-music-levels-retold-interview" target="_blank" rel="noopener noreferrer">With &quot;a dozen&quot; music levels, Rayman Legends Retold doubles down on the best bit of the original game, and having played it I couldn&#039;t be happier - Eurogamer.net</a></h3>
+          <p class="desc">By adding in more music tracks to Rayman Legends Retold, Ubisoft proves the indefatigable spirit of the 2013 game is still alive.</p>
+          <div class="meta">
+            <span class="source">Eurogamer.net</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:30 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://kotaku.com/app/uploads/2026/04/state-of-decay-3-1200x675.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://kotaku.com/state-of-decay-3-studio-announces-its-now-free-from-xbox-and-employee-owned-2000736481" target="_blank" rel="noopener noreferrer">State Of Decay 3 Studio Announces It’s Now Free From Xbox And Employee-Owned - Kotaku</a></h3>
+          <p class="desc">The studio behind open-world zombie series State of Decay confirmed it has completed its separation from Microsoft</p>
+          <div class="meta">
+            <span class="source">Kotaku</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:15 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://hackster.imgix.net/uploads/attachments/2004313/_nRic1Gsugj.blob?auto=compress%2Cformat&amp;w=600&amp;h=450&amp;fit=min')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.hackster.io/news/the-maker-s-toolbox-bambu-lab-r1-co2-laser-cutter-review-6da9c29b3b93" target="_blank" rel="noopener noreferrer">The Maker’s Toolbox: Bambu Lab R1 CO2 Laser Cutter Review - Hackster.io</a></h3>
+          <p class="desc">I’ve spent the past couple of weeks testing the new Bambu Lab R1 and have a lot of thoughts to share with you.</p>
+          <div class="meta">
+            <span class="source">Hackster.io</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:03 PM</span>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-header">
+        <span class="category-icon">🏆</span>
+        <h2>sports</h2>
+        <span class="count">10 stories</span>
+      </div>
+      <div class="card-grid">
+        
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://platform.bleedinggreennation.com/wp-content/uploads/sites/36/2026/09/gettyimages-1637450063.jpg?quality=90&amp;strip=all&amp;crop=0%2C5.2937252474909%2C100%2C78.524186355143&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.bleedinggreennation.com/news/183887/eagles-are-signing-another-cornerback-kenny-moore-colts" target="_blank" rel="noopener noreferrer">Eagles reportedly sign Kenny Moore II - Bleeding Green Nation</a></h3>
+          <p class="desc">The Eagles are brining in veteran CB Kenny Moore to play safety/nickel in Philly.</p>
+          <div class="meta">
+            <span class="source">Bleeding Green Nation</span>
+            <span class="dot">•</span><span class="time">Sep 22, 11:22 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/ap_images/2026-09/b6dd5fc2a48c4851a09b609a8393718c/Titans_Camp_Football_87678_2355x1325_(0,48).jpg?w=1120&amp;h=630')"></div>
+        <div class="card-body">
+          <h3><a href="https://bleacherreport.com/articles/25501999-will-levis-jets-reportedly-agree-contract-will-be-qb3-behind-geno-smith-cade-klubnik" target="_blank" rel="noopener noreferrer">Will Levis, Jets Reportedly Agree to Contract, Will Be QB3 Behind Geno Smith, Cade Klubnik - Bleacher Report</a></h3>
+          <p class="desc">The New York Jets are signing quarterback Will Levis to their practice squad, according to The Ringer&#039;s Tom Pelissero.</p>
+          <div class="meta">
+            <span class="source">Bleacher Report</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:58 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://static.foxnews.com/foxnews.com/content/uploads/2026/09/marvin-harrison-featured.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.foxnews.com/outkick-sports/cardinals-marvin-harrison-jr-looks-entirely-disinterested-season-gets-putrid-start" target="_blank" rel="noopener noreferrer">Cardinals&#039; Marvin Harrison Jr looks entirely disinterested as season gets off to a putrid start - Fox News</a></h3>
+          <p class="desc">Marvin Harrison Jr. has just one catch on four targets through two games as the Arizona Cardinals wideout&#039;s troubling 2026 start raises alarms.</p>
+          <div class="meta">
+            <span class="source">Fox News</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:41 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://www.usatoday.com/gcdn/authoring/authoring-images/2026/09/22/USAT/91882493007-jayden-injury.JPG?crop=2741,1543,x0,y143&amp;width=2741&amp;height=1543&amp;format=pjpg&amp;auto=webp')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.usatoday.com/story/sports/nfl/commanders/2026/09/22/jayden-daniels-elbow-injury-treatment-options/91882442007/" target="_blank" rel="noopener noreferrer">Will Jayden Daniels need elbow surgery? Experts explain &#039;unusual&#039; reinjury - USA Today</a></h3>
+          <p class="desc">An orthopedic surgeon called the recurrence of a dislocated elbow &quot;really unusual&quot; after Commanders QB Jayden Daniels suffered the injury a second time.</p>
+          <div class="meta">
+            <span class="source">USA Today</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:30 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://nbcsports.brightspotcdn.com/dims4/default/627df47/2147483647/strip/true/crop/5472x3078+0+285/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F5f%2F14%2F815c54c141819bca08e9d43c7529%2F1237125747.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-intends-to-proceed-with-ravens-cowboys-in-brazil-but-field-will-look-bad-on-tv" target="_blank" rel="noopener noreferrer">NFL intends to proceed with Ravens-Cowboys in Brazil, but field will look bad on TV - NBC Sports</a></h3>
+          <p class="desc">It will be important for teams to get early access, so that they can wear the right shoes.</p>
+          <div class="meta">
+            <span class="source">NBCSports.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:25 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/k4ccwhzphbsxyoddi8vz.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.mlb.com/news/aaron-judge-likely-to-miss-al-wild-card-series" target="_blank" rel="noopener noreferrer">Judge likely to miss Wild Card Series with calf injury - MLB.com</a></h3>
+          <p class="desc">Aaron Judge is likely to miss the Yankees&#039; expected AL Wild Card Series matchup vs. Boston due to a moderate right calf strain, manager Aaron Boone said on Tuesday.
+“We’re planning on him not being a part of that,” Boone said.
+Judge, who was placed on the 10-…</p>
+          <div class="meta">
+            <span class="source">MLB.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:26 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://nbcsports.brightspotcdn.com/dims4/default/4f81fad/2147483647/strip/true/crop/800x450+0+315/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1d%2F13%2F4e06873d46af9d85e3e40c5e04e7%2Fnacua-puka-800-1080-aa56d212d0027e84.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.nbcsports.com/fantasy/football/player-news/2026-09-22/mcvay-not-sure-if-puka-will-play-week-3" target="_blank" rel="noopener noreferrer">McVay ‘not sure’ if Puka will play Week 3 - NBC Sports</a></h3>
+          <p class="desc">Rams head coach Sean McVay said he&#039;s &quot;not sure&quot; if Puka Nacua (groin) will play in Week 3.</p>
+          <div class="meta">
+            <span class="source">NBCSports.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:13 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://gray-wafb-prod.gtv-cdn.com/resizer/v2/4TYXM75DUZCNTJSXJOTFCZU3GE.jfif?auth=1a2b185da6c2a5a4f3ab4d813aeb79a08bf71a615bc06137abb389a0c87e3ea0&amp;width=1200&amp;height=600&amp;smart=true')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.wafb.com/2026/09/22/lsu-football-player-accused-sexually-assaulting-student-campus/" target="_blank" rel="noopener noreferrer">Criminal investigation opened into alleged sexual assault involving LSU athlete - WAFB</a></h3>
+          <p class="desc">A criminal investigation has been launched into an alleged sexual assault involving an LSU football player and a student, the East Baton Rouge District Attorney’s Office confirmed in a statement Tuesday.</p>
+          <div class="meta">
+            <span class="source">WAFB</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:55 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://static.www.nfl.com/image/upload/t_editorial_landscape_12_desktop/league/k4znmxlhc4slcgnos6i3')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.nfl.com/news/nfl-power-rankings-week-3-2026-nfl-season" target="_blank" rel="noopener noreferrer">NFL Power Rankings, Week 3: Bengals, Chiefs climb; Bears, Buccaneers plummet - NFL.com</a></h3>
+          <p class="desc">What do the Power Rankings look like after a wild week of football? How high do the Bengals fly after an inspiring road win? How low do the Buccaneers go after a humiliating home loss. Check out the full league hierarchy, 1-32, entering Week 3 of the 2026 NFL…</p>
+          <div class="meta">
+            <span class="source">NFL News</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:40 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://cdn.mlbtraderumors.com/files/2024/07/craig-breslow-red-sox-chief-baseball-officer-1024x683.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.mlbtraderumors.com/2026/09/red-sox-extend-chad-tracy-craig-breslow.html" target="_blank" rel="noopener noreferrer">Red Sox Exercise 2029-30 Club Options On Craig Breslow, Sign Manager Chad Tracy To Three-Year Deal - MLB Trade Rumors</a></h3>
+          <p class="desc">The Red Sox picked up two club options on front office leader Craig Breslow and extended manager Chad Tracy. MLB Trade Rumors has more details.</p>
+          <div class="meta">
+            <span class="source">MLB Trade Rumors</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:39 PM</span>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-header">
+        <span class="category-icon">🩺</span>
+        <h2>health</h2>
+        <span class="count">9 stories</span>
+      </div>
+      <div class="card-grid">
+        
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://static.foxnews.com/foxnews.com/content/uploads/2026/09/travelers-philadelphia-airport.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.foxnews.com/health/worlds-most-contagious-virus-hits-major-us-airport-officials-warn-possible-exposure" target="_blank" rel="noopener noreferrer">World’s most contagious virus hits major US airport as officials warn of possible exposure - Fox News</a></h3>
+          <p class="desc">Philadelphia International Airport is tied to a second measles exposure event across multiple terminals amid Pennsylvania&#039;s worsening measles outbreak.</p>
+          <div class="meta">
+            <span class="source">Fox News</span>
+            <span class="dot">•</span><span class="time">Sep 22, 11:12 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image card-image--placeholder">🩺</div>
+        <div class="card-body">
+          <h3><a href="https://www.ksdk.com/article/news/health/st-louis-third-measles-case-confirmed-train-exposure/63-ea5139f1-d92d-43d0-a920-a42f8178f35c" target="_blank" rel="noopener noreferrer">Third St. Louis County measles case confirmed in connection with train exposure - ksdk.com</a></h3>
+          
+          <div class="meta">
+            <span class="source">KSDK.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 10:03 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image card-image--placeholder">🩺</div>
+        <div class="card-body">
+          <h3><a href="https://abcnews.com/Health/la-county-sees-highest-number-west-nile-virus/story?id\\u003d136645469" target="_blank" rel="noopener noreferrer">LA County sees highest number of West Nile virus cases in nearly a decade - ABC News - Breaking News, Latest News and Videos</a></h3>
+          
+          <div class="meta">
+            <span class="source">Abcnews.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:26 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://images.theconversation.com/files/759757/original/file-20260914-60-dqcp53.jpg?ixlib=rb-4.1.1&amp;rect=0%2C689%2C8256%2C4128&amp;q=45&amp;auto=format&amp;w=1356&amp;h=668&amp;fit=crop')"></div>
+        <div class="card-body">
+          <h3><a href="https://theconversation.com/how-the-pro-nicotine-wellness-movement-rebranded-an-addictive-drug-290129" target="_blank" rel="noopener noreferrer">How the pro-nicotine ‘wellness’ movement rebranded an addictive drug - The Conversation</a></h3>
+          <p class="desc">Nicotine products like pouches and patches are being promoted for cognitive enhancement, stress reduction, improved athletic performance and much more – with little scientific evidence.</p>
+          <div class="meta">
+            <span class="source">The Conversation Africa</span>
+            <span class="dot">•</span><span class="time">Sep 22, 06:17 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/73AXQ3XGG2VGUTB4QNW23BCGGY.jpg&amp;w=1440')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.washingtonpost.com/wellness/2026/09/22/what-know-about-covid-vaccines-if-you-need-one-this-fall/" target="_blank" rel="noopener noreferrer">Should you get a covid vaccine this fall? Here’s what to know. - The Washington Post</a></h3>
+          <p class="desc">Here’s how to make sense of all the confusing guidance.</p>
+          <div class="meta">
+            <span class="source">The Washington Post</span>
+            <span class="dot">•</span><span class="time">Sep 22, 05:02 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://cdn.newsday.com/ace/c:NTA5Y2JjMTUtNmYyMS00:ZGVlYjgxYWMtZGZiZi00/landscape/1280')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.newsday.com/news/health/vaccine-fraud-alert-psnu6ovy" target="_blank" rel="noopener noreferrer">NYS Health Department bars 21 providers from vaccinating kids amid fraud crackdown - Newsday</a></h3>
+          <p class="desc">The state&#039;s vaccine fraud unit, formed to combat fake COVID-19 records, was later broadened to investigate childhood immunizations.</p>
+          <div class="meta">
+            <span class="source">Newsday</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:34 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://img.huffingtonpost.com/asset/6ab163ba1c00008a2c95eedc.jpeg?cache=yUegH3kHUV&amp;ops=1200_630')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.huffpost.com/entry/measles-booster-adults_l_6aad4749e4b0a3bc8deb0de1" target="_blank" rel="noopener noreferrer">Measles Is Back In The U.S. — And This 1 Group Of Adults Might Want To Consider A Booster - HuffPost</a></h3>
+          <p class="desc">Doctors warn that about 38% to 40% of measles cases this year have been in adults. Here’s what you need to know.</p>
+          <div class="meta">
+            <span class="source">HuffPost</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:30 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://img.huffingtonpost.com/asset/6aaabb131700004c17201973.jpeg?cache=ldCIssEK3C&amp;ops=500_281%2Cscalefit_1200_630')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.huffpost.com/entry/why-alcohol-makes-you-more-tired-as-you-get-older_l_6a91a55be4b0fc8477ab7b51" target="_blank" rel="noopener noreferrer">So THAT’s Why Drinking Alcohol Makes You More Tired As You Get Older - HuffPost</a></h3>
+          <p class="desc">You’re not imagining things.</p>
+          <div class="meta">
+            <span class="source">HuffPost</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:30 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://nypost.com/wp-content/uploads/sites/2/2026/09/newspress-collage-mp9oy8psd-1789755903151.jpg?quality=75&amp;strip=all&amp;1789741730&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://nypost.com/2026/09/22/health/women-are-using-experimental-peptides-to-treat-menopause-symptoms/" target="_blank" rel="noopener noreferrer">Exclusive | Women are using experimental peptides to treat menopause symptoms - New York Post</a></h3>
+          <p class="desc">More and more women are turning to unregulated peptides to battle menopause. They’ve even developed their own slang, in part to evade content moderation on Instagram and TikTok.</p>
+          <div class="meta">
+            <span class="source">New York Post</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:29 PM</span>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="category-header">
+        <span class="category-icon">🔬</span>
+        <h2>science</h2>
+        <span class="count">10 stories</span>
+      </div>
+      <div class="card-grid">
+        
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1021x574+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F98%2F97%2F5d98a1b647ebab46a93dc60e8c2c%2Fcopy-of-cell-alt-cover.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.npr.org/2026/09/22/nx-s1-5977044/fire-amoeba-extremophile-eukaryote-life" target="_blank" rel="noopener noreferrer">This &#039;fire amoeba&#039; pushes the limit of what&#039;s possible for complex life - NPR</a></h3>
+          <p class="desc">Scientists have found a species they&#039;ve named the fire amoeba, which is capable of reproducing at 145°F and continuing to move up to temperatures of 147°F — a record for complex eukaryotic life.</p>
+          <div class="meta">
+            <span class="source">NPR</span>
+            <span class="dot">•</span><span class="time">Sep 22, 09:47 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://gizmodo.com/app/uploads/2026/09/hydrothermal-spring-1200x675.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://gizmodo.com/early-earth-was-a-molten-asteroid-blasted-hellscape-scientists-now-know-when-that-changed-2000815377" target="_blank" rel="noopener noreferrer">Early Earth Was a Molten, Asteroid-Blasted Hellscape. Scientists Now Know When That Changed - Gizmodo</a></h3>
+          <p class="desc">A new study narrows the timeline for the emergence of life on Earth.</p>
+          <div class="meta">
+            <span class="source">Gizmodo.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 08:30 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://gizmodo.com/app/uploads/2026/09/shark-nebula-photo-winner-1200x675.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://gizmodo.com/a-deep-space-shark-is-prowling-the-cosmos-and-the-photo-just-won-a-major-award-2000815011" target="_blank" rel="noopener noreferrer">A Deep-Space Shark Is Prowling the Cosmos—and the Photo Just Won a Major Award - Gizmodo</a></h3>
+          <p class="desc">The haunting beauty of the universe is on full display in this year&#039;s astrophotography competition.</p>
+          <div class="meta">
+            <span class="source">Gizmodo.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 07:25 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://d2rj6cu2ik1biv.cloudfront.net/193c804a-a673-47bd-b09b-11baf4822a17/7c05fcb0-7a79-4c64-9752-81b63d70add8/5cd64687-f71a-48c5-9bbe-e6357f0392ee/thumbnails/5c2d25d2-b251-449b-bc9a-4d67d8a2db84.jpg?appId=9867779f-bbeb-44ef-a0d0-ca4e39424e99&amp;platform=WEB&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.skyatnightmagazine.com/news/mars-perseverance-margin-unit" target="_blank" rel="noopener noreferrer">Spectacular image from the surface of Mars – and scientists get a big surprise while searching for signs of ancient life - skyatnightmagazine.com</a></h3>
+          <p class="desc">Perseverance rover makes a discovery at Margin Unit on Mars giving scientists clues about the planet&#039;s wet history and conditions for life.</p>
+          <div class="meta">
+            <span class="source">Skyatnightmagazine.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 06:57 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://www.sciencealert.com/images/2026/09/barrel-large.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.sciencealert.com/150000-tons-of-radioactive-waste-were-dumped-in-the-atlantic-decades-later-its-visibly-oozing" target="_blank" rel="noopener noreferrer">150,000 Tons of Radioactive Waste Were Dumped in The Atlantic. Decades Later, It&#039;s Visibly Oozing. - ScienceAlert</a></h3>
+          <p class="desc">The second half of the 20th century was something of a golden age for nuclear technology.</p>
+          <div class="meta">
+            <span class="source">ScienceAlert</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:22 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://media.nature.com/lw1200/magazine-assets/d41586-026-02920-8/d41586-026-02920-8_53741662.jpg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.nature.com/articles/d41586-026-02920-8" target="_blank" rel="noopener noreferrer">Watch scientists decipher burnt scrolls without unrolling them - Nature</a></h3>
+          <p class="desc">By making and burning their own papyrus, researchers have come up with a method that might help to read glowing text from unopened scrolls from Herculaneum.</p>
+          <div class="meta">
+            <span class="source">Nature.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:21 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://d2rj6cu2ik1biv.cloudfront.net/193c804a-a673-47bd-b09b-11baf4822a17/7c05fcb0-7a79-4c64-9752-81b63d70add8/b8cb7e6b-b76a-4fa3-b9ca-13be26dea1c7/thumbnails/d9a17897-2a9c-410e-b293-5f7c5ea4c3c7.jpg?appId=9867779f-bbeb-44ef-a0d0-ca4e39424e99&amp;platform=WEB&amp;w=1200')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.skyatnightmagazine.com/news/radio-signals-detected-beta-pictoris-b" target="_blank" rel="noopener noreferrer">Radio signals detected from a planet beyond our Solar System. Landmark discovery could help us search for habitable worlds - BBC Sky at Night Magazine</a></h3>
+          <p class="desc">Radio signals have been detected coming from a planet beyond our Solar System, giving astronomers insight into exoplanets&#039; magnetic fields.</p>
+          <div class="meta">
+            <span class="source">Skyatnightmagazine.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 04:03 PM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://hackaday.com/wp-content/uploads/2026/09/neutrino_laser_aps_carin_cain.png')"></div>
+        <div class="card-body">
+          <h3><a href="https://hackaday.com/2026/09/21/new-research-suggests-that-a-neutrino-laser-is-impossible/" target="_blank" rel="noopener noreferrer">New Research Suggests That A Neutrino Laser Is Impossible - Hackaday</a></h3>
+          <p class="desc">As cool as it would have been to wield lasers that produce a beam of neutrinos, recently two papers were published by MIT researchers that seem to dampen the likelihood of such lasers being at all …</p>
+          <div class="meta">
+            <span class="source">Hackaday</span>
+            <span class="dot">•</span><span class="time">Sep 22, 07:30 AM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://spacedaily.com/wp-content/uploads/2026/09/Scientists-mapping-the-underground-fungal-networks-that-link-tree-roots-estimate-the-threads-stretch-for-110-quadrillion-kilometres-worldwide-enough-that-laid-end-to-end-they-would-reach-from-Ear.png')"></div>
+        <div class="card-body">
+          <h3><a href="https://spacedaily.com/sd-scientists-mapping-the-underground-fungal-networks-that-link-tree-roots-estimate-the-threads-stretch-for-110-quadrillion-kilometres-worldwide-enough-that-laid-end-to-end-they-would-reach-from-eart/" target="_blank" rel="noopener noreferrer">Scientists mapping the underground fungal networks that link tree roots estimate the threads stretch for 110 quadrillion kilometres worldwide, enough that laid end to end they would reach from Earth to the Sun nearly a billion times - Space Daily</a></h3>
+          <p class="desc">A team led by the Society for the Protection of Underground Networks has mapped Earth&#039;s arbuscular mycorrhizal fungi for the first time: 110 quadrillion kilometres of living thread in the top 15 centimetres of soil, roughly 40 per cent of it beneath grassland.</p>
+          <div class="meta">
+            <span class="source">Space Daily</span>
+            <span class="dot">•</span><span class="time">Sep 22, 05:48 AM</span>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-image" style="background-image:url('https://img.ksl.com/slc/3202/320264/32026445.jpg?filter=kslv2/responsive_story_lg')"></div>
+        <div class="card-body">
+          <h3><a href="https://www.ksl.com/article/51626767/great-for-our-water-supply-byu-study-examines-how-rock-glaciers-fit-into-utahs-water-puzzle" target="_blank" rel="noopener noreferrer">&#039;Great for our water supply&#039;: BYU study examines how rock glaciers fit into Utah&#039;s water puzzle - ksl.com</a></h3>
+          <p class="desc">Researchers at Brigham Young University are studying rock glaciers, or underground frozen water reserves hidden high in mountain ranges across Utah and the Mountain West.</p>
+          <div class="meta">
+            <span class="source">KSL.com</span>
+            <span class="dot">•</span><span class="time">Sep 22, 05:47 AM</span>
+          </div>
+        </div>
+      </article>
+      </div>
+    </section>
+</div>
+
+<footer>
+  Generated automatically by Automated News Digest Generator.
+</footer>
+
+</body>
+</html>
