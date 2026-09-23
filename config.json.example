@@ -1,0 +1,8 @@
+{
+  "apiKey": "YOUR_API_KEY",
+  "categories": ["business", "technology", "sports", "health", "science"],
+  "outputFile": "output/digest.html",
+  "country": "in",
+  "pageSize": 10,
+  "timeoutMs": 10000
+}
